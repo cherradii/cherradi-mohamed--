@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon icon -->
+    {% load static %}
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.png' %}">
+    <title>XEW 2.0</title>
+    <!-- Custom CSS -->
+    <link href="{% static 'assets/libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'dist/css/style.min.css' %}" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+    window.onload=function(){
+
+$('.dropdown').click(function(){
+$(this).siblings(".submenu").toggleClass('hide');
+
+
+});
+}
+</script>
+<style type="text/css">
+    /*body{margin:40px;}*/
+
+    .list
+{
+  padding-left:20px;
+}
+.dropdown
+{
+  margin-left:-15px;
+}
+.submenu > li
+{ display:list-item;
+list-style-type: square;
+
+}
+.submenu{
+  padding-left:12px;
+}
+.submenu > li:hover
+{
+  color:blue;
+}
+
+i.fa.fa-circle-thin
+{
+  color:#00ff74;
+}
+li:hover{
+  background-color:rgba(255, 255, 255, 0.25);
+  cursor:pointer;
+}
+.main-content
+{ text-align: right;
+}
+.main-content > p > a
+{color: white;}
+
+    .btn-circle {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.428571429;
+      border-radius: 15px;
+    }
+    .btn-circle.btn-lg {
+      width: 50px;
+      height: 50px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 25px;
+    }
+    .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      font-size: 24px;
+      line-height: 1.33;
+      border-radius: 35px;
+    }
+
+     section input:hover {
+      background-color: rgb(45, 201, 151);;
+    }
+
+    .btn{
+        background-color: black;
+    }
+
+    .my-custom-scrollbar {
+  position: relative;
+  height: 465px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+</style>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="{% static 'assets/images/logo-icon.png' %}" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="{% static 'assets/images/logo-light-icon.png' %}" alt="homepage" class="light-logo" />
+                            
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                             <!-- dark Logo text -->
+                             <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
+                             <!-- Light Logo text -->    
+                             <!-- <img src="../../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
+                             <h3 style="padding-bottom:10px;">XEW 2.0</h3>
+                        </span>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+                            <form class="app-search position-absolute">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{ % static 'assets/images/users/1.jpg' %}" alt="user" class="rounded-circle" width="31"></a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Log Out</a>
+                                <!-- <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a> -->
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <!--<div class="user-profile d-flex no-block dropdown m-t-20">-->
+                                <!--<div class="user-pic"><img src="{ % static 'assets/images/users/1.jpg' %}" alt="users" class="rounded-circle" width="40" /></div>-->
+                                <!--<div class="user-content hide-menu m-l-10">-->
+                                    <!--<a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                        <!--<h5 class="m-b-0 user-name font-medium">Steave Jobs <i class="fa fa-angle-down"></i></h5>-->
+                                        <!--<span class="op-5 user-email">varun@gmail.com</span>-->
+                                    <!--</a>-->
+                                    <!--<div class="dropdown-menu dropdown-menu-right" aria-labelledby="Userdd">-->
+                                        <!--<a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>-->
+                                        <!--<a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>-->
+                                        <!--<a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>-->
+                                        <!--<div class="dropdown-divider"></div>-->
+                                        <!--<a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>-->
+                                        <!--<div class="dropdown-divider"></div>-->
+                                        <!--<a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!-- End User Profile-->
+                        </li>
+                        <!-- <li class="p-15 m-t-10"><a href="javascript:void(0)" class="btn btn-block create-btn text-white no-block d-flex align-items-center"><i class="fa fa-plus-square"></i> <span class="hide-menu m-l-5">Create New</span> </a></li> -->
+                        <!-- User Profile-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>-->
+                        <!--<li class="sidebar-item">-->
+                            <!--<a class="sidebar-link waves-effect waves-dark sidebar-link" href="#">-->
+                                <!--<i class="mdi mdi-view-dashboard"></i>Dashboard</a>-->
+                            <!--<ul class="list-unstyled navbar__sub-list js-sub-list">-->
+                                <!--<li>-->
+                                    <!--&lt;!&ndash;<a href="index1.html">Cluster</a>&ndash;&gt;-->
+                                    <!--<input type="button" style="background-color:white;"  name="radiobutton" value="Top sujets" onclick ="vizData(event)"/>-->
+                                <!--</li>-->
+                                <!--</br>-->
+                                <!--<li>-->
+                                    <!--&lt;!&ndash;<a href="index2.html">Nombre des Inventeurs par numero de brevet</a>&ndash;&gt;-->
+                                    <!--<input type="button" style="background-color:white;"  name="radiobutton" value="Iventeur/Id. Brevet" onclick ="vizData(event)"/>-->
+                                <!--</li>-->
+                                <!--</br>-->
+                                <!--<li>-->
+                                    <!--&lt;!&ndash;<a href="index3.html">Nombre des brevets par l'année</a>&ndash;&gt;-->
+                                    <!--<input type="button" style="background-color:white;"  name="radiobutton" value="Brevet/Année" onclick ="vizData(event)"/>-->
+                                <!--</li>-->
+                                <!--</br>-->
+                                <!--<li>-->
+                                    <!--<a href="#">Word Cloud</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <li class="list">
+                            <div class="dropdown">
+                                <i class="sidebar-item" aria-hidden="true"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></i>
+                            </div>
+                            <ul class="submenu hide">
+                                <li><input type="button" style="background-color:white;"  name="radiobutton" value="Top sujets" onclick ="vizData(event)"/></li>
+                                <li><input type="button" style="background-color:white;"  name="radiobutton" value="Iventeur/Id. Brevet" onclick ="vizData(event)"/></li>
+                                <li><input type="button" style="background-color:white;"  name="radiobutton" value="Brevet/Année" onclick ="vizData(event)"/></li>
+
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <div class="dropdown">
+                                <i class="sidebar-item" aria-hidden="true"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Smart Cities Inventeurs</span></a></i>
+                            </div>
+                            <ul class="submenu hide">
+                                <li>
+                                    <!--<a href="login.html">Inventors/Company</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Inventeur/Societé" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="register.html">Inventors/Domain</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Inventeur/Domaine" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="forget-pass.html">Inventors/Inventors</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Inventeur/Inventeur" onclick ="vizData(event)"/>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <div class="dropdown">
+                                <i class="sidebar-item" aria-hidden="true"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Smart Cities Societés</span></a></i>
+                            </div>
+                            <ul class="submenu hide">
+                                <li>
+                                    <!--<a href="login.html">Company/Inventors</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Societé/Inventeur" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="register.html">Company/Domain</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Societé/Domaine" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="forget-pass.html">Company/Company</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Societé/Societé" onclick ="vizData(event)"/>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <div class="dropdown">
+                                <i class="sidebar-item" aria-hidden="true"><a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Smart Cities Domaines</span></a></i>
+                            </div>
+                            <ul class="submenu hide">
+                                <li>
+                                    <!--<a href="login.html">Domain/Inventors</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Domaine/Inventeur" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="register.html">Domain/Company</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Domaine/Societé" onclick ="vizData(event)"/>
+                                </li>
+                                <li>
+                                    <!--<a href="forget-pass.html">Domain/Domain</a>-->
+                                    <input type="button" style="background-color:white;"  name="radiobutton" value="Domaine/Domaine" onclick ="vizData(event)"/>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-account-network"></i><span class="hide-menu">Profile</span></a></li>-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-border-all"></i><span class="hide-menu">Table</span></a></li>-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-face"></i><span class="hide-menu">Icon</span></a></li>-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-file"></i><span class="hide-menu">Blank</span></a></li>-->
+                        <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-alert-outline"></i><span class="hide-menu">404</span></a></li>-->
+
+                        <!-- <li class="text-center p-40 upgrade-btn">
+                            <a href="https://wrappixel.com/templates/xtremeadmin/" class="btn btn-block btn-danger text-white" target="_blank">Upgrade to Pro</a>
+                        </li> -->
+                    </ul>
+                    
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <h4 class="page-title"><span class="label label-danger">Achat Durable Travaux Dashboard</span> </h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                    <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- <div class="col-7">
+                        <div class="text-right upgrade-btn">
+                            <a href="https://wrappixel.com/templates/xtremeadmin/" class="btn btn-danger text-white" target="_blank">Upgrade to Pro</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <!-- <h4 class="card-title">Sales Summary</h4>
+                                        <h5 class="card-subtitle">Overview of Latest Month</h5> -->
+                                    </div>
+                                    <div class="ml-auto d-flex no-block align-items-center">
+                                        <!-- <ul class="list-inline font-12 dl m-r-15 m-b-0">
+                                            <li class="list-inline-item text-info"><i class="fa fa-circle"></i> Iphone</li>
+                                            <li class="list-inline-item text-primary"><i class="fa fa-circle"></i> Ipad</li>
+                                        </ul> -->
+
+                                        <div class="list_icon">
+                                <header class="title-2 tm-b-5">
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="A" title="Bar Chart" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="B" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="C" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="D" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="I" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="L" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="M" onclick ="vizData(event)"/>
+                                    <input type="button" class="btn btn-circle" name="radiobutton" value="N" onclick ="vizData(event)"/>
+
+									<!-- screenHosts: -->
+
+
+
+								</header>
+                                </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row"> -->
+                                    <!-- column -->
+                                    <!-- <div class="col-lg-12"> -->
+                                        <center><div class="" id="viz" style=""></div></center>
+                                    <!-- </div> -->
+                                    <!-- column -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+									var targetDiv = document.getElementById('viz');
+									var visualization = '';
+
+									var byDefault = d3.json("{% static 'dataEnergy/name_size_countries.json' %}", function(error, sample_data) {
+											d3.json("{% static 'dataSmart/source_target_countries.json' %}", function(error, connections) {
+											var visualization = d3plus.viz()
+											.container("#viz")
+											.title("Colaborations entre les regions")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)   // list of node connections
+											.size("size")
+											.height(400)       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()
+                                           .resize(true)
+											});
+										});
+
+									function vizData(event){
+									  switch(event.target.value){
+										case 'A':{
+											d3.json("{% static 'dataEnergy/name_size_countries.json' %}", function(error, sample_data) {
+											d3.json("{% static 'dataEnergy/source_target_countries.json' %}", function(error, connections) {
+											var visualization = d3plus.viz()
+											.container("#viz")
+											.title("Colaborations entre les regions")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections) // list of node connections
+											.size("size")
+											.height(400)// key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()
+                                           .resize(true)
+											});
+										});
+										 break;
+										}
+
+										case 'B':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")
+											 .title("Colaborations entre les Societés")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")
+											.height(400)// key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()             // finally, draw the visualization!
+                                           .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'C':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_inventors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")
+											  .title("Colaborations entre les Inventeurs")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											//.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")
+											.height(400)// key for which our data is unique on
+											.draw()
+											.resize(true)    // finally, draw the visualization!
+
+											});
+
+										});
+										break;
+										}
+
+										case 'D':{
+										    d3.json("{% static 'dataEnergy/data_cpc.json' %}", function(error, data) {
+									         var visualization = d3plus.viz()
+											.container("#viz")
+											  .title("l'evolution de Domaines")// container DIV to hold the visualization
+											.data(data)  // data to use with the visualization
+											.type("bar")    // visualization type
+											.id("id")         // key for which our data is unique on
+											.x("Domaine")         // key for x-axis
+											.y("Frequence")
+											.height(400)// key for y-axis
+											.draw()
+											.resize(true)
+
+											.shape("Bar")
+
+
+											});
+
+										break;
+										}
+
+										case 'I':{
+											d3.json("{% static 'dataEnergy/clustering1.json' %}", function(error, data) {
+
+
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .title("Top sujets")
+                                             .data(data)
+                                             .type("pie")
+                                             .id("cluster")
+                                             .size("count")
+                                             .height(450)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'L':{
+											d3.json("{% static 'dataEnergy/year.json' %}", function(error, data) {
+                                            // Coerce data values to be numeric
+                                           data.forEach(function(d) {
+                                             d3.keys(d).forEach(function(k) {
+                                               if (k !== "year") {
+                                                 d[k] = +d[k]
+
+                                               }
+
+                                             })
+                                           });
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .title("les annees")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("year")
+                                             .x({
+                                               value: "year",
+                                               grid: false
+
+                                             })
+                                             .y("count")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(400)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'M':{
+											d3.json("{% static 'dataEnergy/codeInv.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .title("code inventeurs")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("code")
+                                             .x({
+                                               value: "code"
+
+                                             })
+                                             .y("num_inventors")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(400)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Top sujets':{
+											d3.json("{% static 'dataEnergy/clustering1.json' %}", function(error, data) {
+
+
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .data(data)
+                                             .type("pie")
+                                             .id("cluster")
+                                             .size("count")
+                                             .height(450)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Iventeur/Id. Brevet':{
+											d3.json("{% static 'dataEnergy/codeInv.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .title("Nombre d'inventeurs dans chaque Brevets")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("code")
+                                             .x({
+                                               value: "code"
+
+                                             })
+                                             .y("num_inventors")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(400)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Brevet/Année':{
+											d3.json("{% static 'dataEnergy/year.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container("#viz")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("year")
+                                             .x({
+                                               value: "year"
+
+                                             })
+                                             .y("count")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(400)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Inventeur/Societé':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/inventors_companies_energy.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Inventeur/Domaine':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/inventors_cpc_energy.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Inventeur/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_inventors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											//.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/companies_inventors_energy.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Domaine':{
+											d3.json("{% static 'dataEnergy/name_size_companies_size.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/companies_inventors_energy.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Societé':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Domaine/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/cpc_inventors_energy.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Domaine/Societé':{
+											d3.json("{% static 'dataEnergy/domaine_companies_size.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/domaine_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container("#viz")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(400)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										default:
+												// TO DO:
+												byDefault;
+									}
+									targetDiv.innerHTML = visualization;
+								}
+							</script>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Statistiques</h4>
+                                <div class="feed-widget">
+                                    <ul class="list-style-none feed-body m-0 p-b-20">
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-info"><i class="far fa-bell"></i></div> Brevets <span class="ml-auto font-12 text-muted">50</span></li>
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-success"><i class="ti-server"></i></div> Inventeurs<span class="ml-auto font-12 text-muted">151</span></li>
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-warning"><i class="ti-shopping-cart"></i></div> Pays<span class="ml-auto font-12 text-muted">26</span></li>
+                                        <!-- <li class="feed-item">
+                                            <div class="feed-icon bg-danger"><i class="ti-user"></i></div> New user registered.<span class="ml-auto font-12 text-muted">30 May</span></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+                
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by XEW 2.0.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{ 'assets/libs/popper.js/dist/umd/popper.min.js' %}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dist/js/app-style-switcher.js' %}"></script>
+    <!--Wave Effects -->
+    <script src="{% static 'dist/js/waves.js' %}"></script>
+    <!--Menu sidebar -->
+    <script src="{% static 'dist/js/sidebarmenu.js' %}"></script>
+    <!--Custom JavaScript -->
+    <script src="{% static 'dist/js/custom.js' %}"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="{% static 'assets/libs/chartist/dist/chartist.min.js' %}"></script>
+    <script src="{% static 'assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js' %}"></script>
+    <script src="{% static 'dist/js/pages/dashboards/dashboard1.js' %}"></script>
+</body>
+
+</html>

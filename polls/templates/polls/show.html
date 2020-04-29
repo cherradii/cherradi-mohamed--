@@ -1,0 +1,119 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+<!--<html lang="en">-->
+    <!--<head>-->
+        <!--<meta charset="UTF-8">-->
+
+        <!--<title>Results</title>-->
+    <!--</head>-->
+    <!--<body>-->
+        <!--</br>-->
+        <!--<h1>{{search_string}}</h1>-->
+
+        <!--<table class="table table-striped">-->
+  <!--<thead>-->
+    <!--<tr>-->
+      <!--<th scope="col">#</th>-->
+      <!--<th scope="col">Id</th>-->
+      <!--<th scope="col">Title</th>-->
+      <!--<th scope="col">Code</th>-->
+      <!--<th scope="col">Year</th>-->
+      <!--<th scope="col">Inventors</th>-->
+      <!--<th scope="col">Abstract</th>-->
+    <!--</tr>-->
+  <!--</thead>-->
+  <!--<tbody>-->
+  <!--{% for poll in polls%}-->
+    <!--<tr>-->
+      <!--<th scope="row">{{ forloop.counter }}</th>-->
+      <!--<td>{{poll.id}}</td>-->
+      <!--<td>{{poll.title}}</td>-->
+      <!--<td>{{poll.code}}</td>-->
+      <!--<td>{{poll.year}}</td>-->
+      <!--<td>{{poll.inventors}}</td>-->
+      <!--<td>{{poll.abstract}}</td>-->
+    <!--</tr>-->
+  <!--{% endfor %}-->
+  <!--</tbody>-->
+<!--</table>-->
+    <!--</body>-->
+<!--</html>-->
+
+<!--<div class="container margin_120_95">-->
+			<!--<div class="main_title">-->
+				<!--<h2><strong>Resultats des Brevets</strong></h2>-->
+				<!--<p>Les informations de différents brevets</p>-->
+			<!--</div>-->
+			<!--<div class="row">-->
+                    <!--&lt;!&ndash; column &ndash;&gt;-->
+                    <!--<div class="col-12">-->
+                        <!--<div class="card">-->
+                            <!--<div class="card-body">-->
+                                <!--&lt;!&ndash; title &ndash;&gt;-->
+                                <!--&lt;!&ndash; <div class="d-md-flex align-items-center">-->
+                                    <!--<div>-->
+                                        <!--<h4 class="card-title">Resultats des Brevets</h4>-->
+                                        <!--<h5 class="card-subtitle">Les Inforamtions de differents brevets</h5>-->
+                                    <!--</div>-->
+                                    <!--<div class="ml-auto">-->
+                                        <!--<div class="dl">-->
+                                            <!--<select class="custom-select">-->
+                                                <!--<option value="0" selected>Monthly</option>-->
+                                                <!--<option value="1">Daily</option>-->
+                                                <!--<option value="2">Weekly</option>-->
+                                                <!--<option value="3">Yearly</option>-->
+                                            <!--</select>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div> &ndash;&gt;-->
+                                <!--&lt;!&ndash; title &ndash;&gt;-->
+                            <!--</div>-->
+                            <!--<div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">-->
+                                <!--<table class="table v-middle">-->
+                                    <!--<thead>-->
+                                        <!--<tr class="bg-light">-->
+                                            <!--<th class="border-top-0">#</th>-->
+                                            <!--<th class="border-top-0">Id</th>-->
+                                            <!--<th class="border-top-0">Title</th>-->
+                                            <!--<th class="border-top-0">Code</th>-->
+                                            <!--<th class="border-top-0">Year</th>-->
+                                            <!--<th class="border-top-0">Inventeurs</th>-->
+                                            <!--&lt;!&ndash;<th class="border-top-0">Earnings</th>&ndash;&gt;-->
+                                        <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                        <!--{% for poll in polls%}-->
+                                        <!--<tr>-->
+                                            <!--<td>-->
+                                                <!--<div class="d-flex align-items-center">-->
+                                                    <!--&lt;!&ndash;<div class="m-r-10"><a class="btn btn-circle btn-info text-white">EA</a></div>&ndash;&gt;-->
+                                                    <!--<div class="">-->
+                                                        <!--<h4 class="m-b-0 font-16">{{ forloop.counter }}</h4>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</td>-->
+                                            <!--<td>{{poll.id}}</td>-->
+                                            <!--<td>{{poll.title}}</td>-->
+                                            <!--<td>-->
+                                                <!--<label class="label label-danger">{{poll.code}}</label>-->
+                                            <!--</td>-->
+                                            <!--<td>{{poll.year}}</td>-->
+                                            <!--<td>{{poll.inventors}}</td>-->
+                                            <!--&lt;!&ndash;<td>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<h5 class="m-b-0">$2850.06</h5>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;</td>&ndash;&gt;-->
+                                        <!--</tr>-->
+                                        <!--{% endfor %}-->
+
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+		<!--</div>-->
+
+{% endblock content %}

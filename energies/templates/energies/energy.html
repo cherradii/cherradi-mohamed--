@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>XEW 2.0</title>
+  <!-- plugins:css -->
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'vendors_V/mdi/css/materialdesignicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors_V/base/vendor.bundle.base.css' %}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="{% static 'vendors_V/datatables.net-bs4/dataTables.bootstrap4.css' %}">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{% static 'css_V/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css_V/style_stat.css' %}">
+  <!-- endinject -->
+  <link rel="icon" type="image/png" sizes="500x40" href="{% static 'images_V/favXew.png' %}" />
+
+
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.2/d3plus.full.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+
+
+
+    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/regular.css" integrity="sha384-FKw7x8fCxuvzBwOJmhTJJsKzBl8dnN9e2R4+pXRfYoHivikuHkzWyhKWDSMcGNK8" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<style type="text/css">
+
+
+    .list
+{
+  padding-left:20px;
+}
+.dropdown
+{
+  margin-left:-15px;
+}
+.submenu > li
+{ display:list-item;
+list-style-type: square;
+
+}
+.submenu{
+  padding-left:12px;
+}
+.submenu > li:hover
+{
+  color:blue;
+}
+
+i.fa.fa-circle-thin
+{
+  color:#00ff74;
+}
+li:hover{
+  background-color:rgba(255, 255, 255, 0.25);
+  cursor:pointer;
+}
+.main-content
+{ text-align: right;
+}
+.main-content > p > a
+{color: white;}
+
+
+     section input:hover {
+      background-color: rgb(45, 201, 151);;
+    }
+
+
+
+    .my-custom-scrollbar {
+  position: relative;
+  height: 465px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+
+.btn{
+        background: rgb(51, 51, 51);
+        color: white;
+
+    }
+
+.btn-circle {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.428571429;
+      border-radius: 15px;
+    }
+    .btn-circle.btn-lg {
+      width: 50px;
+      height: 50px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 25px;
+    }
+    .btn-circle.btn-xl {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      font-size: 24px;
+      line-height: 1.33;
+      border-radius: 35px;
+    }
+
+.btn{
+        background: rgb(51, 51, 51);
+
+
+    }
+
+    .btn:hover {
+  background-color: rgb(27, 177, 220);
+}
+.btn1 {
+  background: rgb(27, 177, 220);
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 465px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+
+
+</style>
+
+
+
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="{% url 'home' %}"><img src="{% static 'images_V/xew.png' %}" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="{% url 'home' %}"><img src="{% static 'images_V/minixew.png' %}" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <!-- <ul class="navbar-nav mr-lg-4 w-100">
+          <li class="nav-item nav-search d-none d-lg-block w-100">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul> -->
+        <!-- <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown mr-1">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-message-text mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">David Grey
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">Tim Cook
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal"> Johnson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-success">
+                    <i class="mdi mdi-information mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-warning">
+                    <i class="mdi mdi-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-info">
+                    <i class="mdi mdi-account-box mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">Louis Barnett</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="mdi mdi-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="mdi mdi-logout text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul> -->
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Visualisation</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">Tableau de bord</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li> -->
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Top sujets" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Iventeur/Id. Brevet" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Brevet/Année" onclick ="vizData(event)"/></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#inventeurs" aria-expanded="false" aria-controls="inventeurs">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">RE Inventeurs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="inventeurs">
+              <ul class="nav flex-column sub-menu">
+                <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li> -->
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Inventeur/Societé" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Inventeur/Domaine" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Inventeur/Inventeur" onclick ="vizData(event)"/></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#societés" aria-expanded="false" aria-controls="societés">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">RE Societés</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="societés">
+              <ul class="nav flex-column sub-menu">
+                <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li> -->
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Societé/Inventeur" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Societé/Domaine" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Societé/Societé" onclick ="vizData(event)"/></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#domaine" aria-expanded="false" aria-controls="domaine">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">RE Domaines</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="domaine">
+              <ul class="nav flex-column sub-menu">
+                <!-- <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li> -->
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Domaine/Inventeur" onclick ="vizData(event)"/></li>
+                <li class="nav-item"><input type="button" style="background-color:white; border:none;" class="nav-link" name="radiobutton" value="Domaine/Societé" onclick ="vizData(event)"/></li>
+                
+              </ul>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="pages/icons/mdi.html">
+              <i class="mdi mdi-emoticon menu-icon"></i>
+              <span class="menu-title">Icons</span>
+            </a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+              </ul>
+            </div>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="documentation/documentation.html">
+              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex align-items-end flex-wrap">
+                  <div class="mr-md-3 mr-xl-5">
+                    <h2>SBDV-XEW,</h2>
+                    <p class="mb-md-0"><span class="badge badge-primary">Renewable Energy Visualisation.</span></p>
+                  </div>
+                  <!-- <div class="d-flex">
+                    <i class="mdi mdi-home text-muted hover-cursor"></i>
+                    <p class="text-muted mb-0 hover-cursor">&nbsp;/&nbsp;Dashboard&nbsp;/&nbsp;</p>
+                    <p class="text-primary mb-0 hover-cursor">Analytics</p>
+                  </div> -->
+                </div>
+                <div class="d-flex justify-content-between align-items-end flex-wrap">
+                  <!-- <button type="button" class="btn btn-light bg-white btn-icon mr-3 d-none d-md-block ">
+                    <i class="mdi mdi-download text-muted"></i>
+                  </button>
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-clock-outline text-muted"></i>
+                  </button>
+                  <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-plus text-muted"></i>
+                  </button> -->
+                  <a href="{% url 'explorer' %}" class="btn btn-primary mt-2 mt-xl-0">EXPLORER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body dashboard-tabs p-0">
+                  <ul class="nav nav-tabs px-4" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Purchases</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content py-0 px-0">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">$577545</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">9833550</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2233783</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2233783</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">9833550</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">$577545</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="purchases" role="tabpanel" aria-labelledby="purchases-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">$577545</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">9833550</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2233783</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col-md-8 grid-margin stretch-card">
+              <!-- <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Cash deposits</p>
+                  <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
+                  <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div>
+                  <canvas id="cash-deposits-chart"></canvas>
+                </div>
+              </div> -->
+              <div class="card" >
+    <div class="card-header" style="background: white; border-bottom: none;">
+      <div class="alignleft">
+    <button type="button" class="btn btn-circle btn1" value="A" name="button" onclick ="vizData(event)"><i class="fab fa-hubspot fa-xs" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " value="B" name="button" onclick ="vizData(event)"><i class="fa fa-city" style="color: white; list-style-image: none; font-size: 0.9rem;"></i></button>
+    <button type="button" class="btn btn-circle " value="C" name="button" onclick ="vizData(event)"><i class="fab fa-hubspot" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " value="D" name="button" onclick ="vizData(event)"><i class="fa fa-chart-bar mdb-gallery-view-icont" style="color: white; list-style-image: none; font-size: 0.9rem;"></i></button>
+    <button type="button" class="btn btn-circle " value="I" name="button" onclick ="vizData(event)"><i class="fa fa-pie-chart" style="color: white; font-size: 0.9rem; "></i></button>
+    <button type="button" class=" btn btn-circle " value="L" name="button" onclick ="vizData(event)"><i class="fa fa-chart-bar mdb-gallery-view-icont" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " value="M" name="button" onclick ="vizData(event)"><i class="fa fa-chart-bar mdb-gallery-view-icont" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " value="N" name="button" onclick ="vizData(event)"><i class="fas fa-globe" style="color: white; font-size: 0.9rem;"></i></button>
+  </div>
+  <div class="alignright">
+    <button type="button" class="btn btn-circle " value="" name="button" onclick ="vizData(event)"><i class="fa fa-question" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " value="" name="button" onclick ="vizData(event)"><i class="fa fa-picture-o" style="color: white; list-style-image: none; font-size: 0.9rem;"></i></button>
+    <button type="button" id="save" class="btn btn-circle "><i class="fas fa-share-square" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class="btn btn-circle " value="" name="button" onclick ="vizData(event)"><i class="fa fa-arrows-alt" style="color: white; font-size: 0.9rem;"></i></button>
+  </div>
+    </div>
+    <div class="card-body" style="height: 400px;">
+      <center><div id="viz" class="test"></div></center>
+    </div>
+    <div class="card-footer text-muted" style="background: white; border-top: none;">
+      <div class="alignleft">
+    <button type="button" class="btn btn-circle" name="button"><i class="fab fa-facebook-f" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle "  name="button"><i class="fab fa-twitter" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class="btn btn-circle " name="button"><i class="fab fa-google" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class="btn btn-circle " name="button"><i class="fa fa-heart" style="color: white; font-size: 0.9rem;"></i></button>
+  </div>
+  <div class="alignright">
+    <button type="button" class="btn btn-circle "  name="button"><i class="fa fa-link" style="color: white; font-size: 0.9rem;"></i></button>
+    <button type="button" class=" btn btn-circle " name="button"><i class="fa fa-code" style="color: white; list-style-image: none; font-size: 0.9rem;"></i></button>
+  </div>
+    </div>
+</div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js_V/html2canvas/html2canvas.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js_V/html2canvas/canvas2image.js' %}"></script>
+
+    <script type="text/javascript">
+        var test = $(".test").get(0);
+        // to canvas
+$('#save').click(function(e) {
+  html2canvas(test).then(function(canvas) {
+    // canvas width
+    var canvasWidth = canvas.width;
+    // canvas height
+    var canvasHeight = canvas.height;
+    // render canvas
+
+    // show 'to image' button
+
+    // convert canvas to image
+
+      var img = Canvas2Image.convertToImage(canvas, canvasWidth, canvasHeight);
+      // render image
+      // save
+
+        let type = "png" // image type
+        let w = 900 // image width
+        let h = 370 // image height
+        let f = "SBDV-XEW" // file name
+        w = (w === '') ? canvasWidth : w;
+        h = (h === '') ? canvasHeight : h;
+        // save as image
+        Canvas2Image.saveAsImage(canvas, w, h, type, f);
+      });
+    });
+
+
+    </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+             <script type="text/javascript">
+									var targetDiv = document.getElementById('viz');
+									var visualization = '';
+
+									var byDefault = d3.json("{% static 'dataEnergy/name_size_countries.json' %}", function(error, sample_data) {
+											d3.json("{% static 'dataSmart/source_target_countries.json' %}", function(error, connections) {
+											var visualization = d3plus.viz()
+											.container(".test")
+											.title("Colaborations entre les regions")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)   // list of node connections
+											.size("size")
+											.height(370)       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()
+                                           .resize(true)
+											});
+										});
+
+									function vizData(event){
+									  switch(event.target.value){
+										case 'A':{
+											d3.json("{% static 'dataEnergy/name_size_countries.json' %}", function(error, sample_data) {
+											d3.json("{% static 'dataEnergy/source_target_countries.json' %}", function(error, connections) {
+											var visualization = d3plus.viz()
+											.container(".test")
+											.title("Colaborations entre les regions")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections) // list of node connections
+											.size("size")
+											.height(370)// key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()
+                                           .resize(true)
+											});
+										});
+										 break;
+										}
+
+										case 'B':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")
+											 .title("Colaborations entre les Societés")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")
+											.height(370)// key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.draw()             // finally, draw the visualization!
+                                           .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'C':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_inevntors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")
+											  .title("Colaborations entre les Inventeurs")// container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											//.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")
+											.height(370)// key for which our data is unique on
+											.draw()
+											.resize(true)    // finally, draw the visualization!
+
+											});
+
+										});
+										break;
+										}
+
+										case 'D':{
+										    d3.json("{% static 'dataEnergy/data_cpc.json' %}", function(error, data) {
+									         var visualization = d3plus.viz()
+											.container(".test")
+											  .title("l'evolution de Domaines")// container DIV to hold the visualization
+											.data(data)  // data to use with the visualization
+											.type("bar")    // visualization type
+											.id("id")         // key for which our data is unique on
+											.x("Domaine")         // key for x-axis
+											.y("Frequence")
+											.height(370)// key for y-axis
+											.draw()
+											.resize(true)
+
+											.shape("Bar")
+
+
+											});
+
+										break;
+										}
+
+										case 'I':{
+											d3.json("{% static 'dataEnergy/clustering1.json' %}", function(error, data) {
+
+
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .title("Top sujets")
+                                             .data(data)
+                                             .type("pie")
+                                             .id("cluster")
+                                             .size("count")
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'L':{
+											d3.json("{% static 'dataEnergy/years.json' %}", function(error, data) {
+                                            // Coerce data values to be numeric
+                                           data.forEach(function(d) {
+                                             d3.keys(d).forEach(function(k) {
+                                               if (k !== "year") {
+                                                 d[k] = +d[k]
+
+                                               }
+
+                                             })
+                                           });
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .title("les annees")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("year")
+                                             .x({
+                                               value: "year",
+                                               grid: false
+
+                                             })
+                                             .y("count")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'M':{
+											d3.json("{% static 'dataEnergy/codeInv.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .title("code inventeurs")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("code")
+                                             .x({
+                                               value: "code"
+
+                                             })
+                                             .y("num_inventors")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'N':{
+                      d3.json("{% static 'dataVehicle/map.json' %}", function(error, data) {
+
+                                              var visualization = d3plus.viz()
+                                              .container("#viz")
+                                              .data(data)
+                                              .coords("http://d3plus.org/topojson/countries.json")
+                                              .type("geo_map")
+                                              .id("country")
+                                              .text("name")
+                                              .color("value")
+                                              .tooltip("value")
+                                              .height(370)
+                                              .draw()
+                                              .resize(true)
+
+                                              });
+                    break;
+                    }
+
+										case 'Top sujets':{
+											d3.json("{% static 'dataEnergy/clustering1.json' %}", function(error, data) {
+
+
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .data(data)
+                                             .type("pie")
+                                             .id("cluster")
+                                             .size("count")
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+
+
+										case 'Iventeur/Id. Brevet':{
+											d3.json("{% static 'dataEnergy/codeInv.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .title("Nombre d'inventeurs dans chaque Brevets")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("code")
+                                             .x({
+                                               value: "code"
+
+                                             })
+                                             .y("num_inventors")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Brevet/Année':{
+											d3.json("{% static 'dataEnergy/years.json' %}", function(error, data) {
+
+                                           var visualization = d3plus.viz()
+                                             .container(".test")
+                                             .data(data)
+                                             .type("bar")
+                                             .id("year")
+                                             .x({
+                                               value: "year"
+
+                                             })
+                                             .y("count")
+                                             .color({
+                                               value: ""
+                                             })
+                                             .height(370)
+                                             .draw()
+                                             .resize(true)
+                                         });
+										break;
+										}
+
+										case 'Inventeur/Societé':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/inventors_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Inventeur/Domaine':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/inventors_cpc.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Inventeur/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_inevntors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											//.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/companies_inventors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Domaine':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/companies_domaine.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Societé/Societé':{
+											d3.json("{% static 'dataEnergy/name_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/source_target_companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Domaine/Inventeur':{
+											d3.json("{% static 'dataEnergy/name_size_inventors.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/cpc_inventors.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										case 'Domaine/Societé':{
+											d3.json("{% static 'dataEnergy/domaine_size_companies.json' %}", function(error, sample_data) {
+										    d3.json("{% static 'dataEnergy/domaine_Companies.json' %}", function(error, connections) {
+									        var visualization = d3plus.viz()
+											.container(".test")  // container DIV to hold the visualization
+											.type("network")    // visualization type
+											.data(sample_data)  // sample dataset to attach to nodes
+											// .nodes(positions)   // x and y position of nodes
+											.edges(connections)
+											.edges({"arrows": true}) // list of node connections
+											.size("size")       // key to size the nodes
+											.id("name")         // key for which our data is unique on
+											.height(370)
+											.draw()             // finally, draw the visualization!
+                                            .resize(true)
+											});
+
+										});
+										break;
+										}
+
+										default:
+												// TO DO:
+												byDefault;
+									}
+									targetDiv.innerHTML = visualization;
+								}
+							</script>
+
+
+
+
+
+            <div class="col-md-4 ">
+              <!-- <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Total sales</p>
+                  <h1>$ 28835</h1>
+                  <h4>Gross sales over the years</h4>
+                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                  <div id="total-sales-chart-legend"></div>                  
+                </div>
+                <canvas id="total-sales-chart"></canvas>
+              </div> -->
+              <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Statistiques</h4>
+                                <div class="feed-widget">
+                                    <ul class="list-style-none feed-body m-0 p-b-20">
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-info"><i class="fas fa-file-alt"></i></div> Brevets <span class="ml-auto font-12 text-muted">50</span></li>
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-success"><i class="fa fa-users"></i></div> Inventeurs<span class="ml-auto font-12 text-muted">143</span></li>
+                                        <li class="feed-item">
+                                            <div class="feed-icon bg-warning"><i class="fas fa-globe"></i></div> Pays<span class="ml-auto font-12 text-muted">30</span></li>
+                                        <!-- <li class="feed-item">
+                                            <div class="feed-icon bg-danger"><i class="ti-user"></i></div> New user registered.<span class="ml-auto font-12 text-muted">30 May</span></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+          </div>
+          <!--<div class="row">-->
+            <!--<div class="col-md-12 stretch-card">-->
+              <!--<div class="card">-->
+                <!--<div class="card-body">-->
+                  <!--<p class="card-title">Resultats des Brevets</p>-->
+                  <!--<div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">-->
+                    <!--<table id="recent-purchases-listing" class="table">-->
+                      <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>#</th>-->
+                            <!--<th>ID</th>-->
+                            <!--<th>TITLE</th>-->
+                            <!--<th>CODE</th>-->
+                            <!--<th>ANNEE</th>-->
+                            <!--<th>INVENTEURS</th>-->
+                        <!--</tr>-->
+                      <!--</thead>-->
+                      <!--<tbody>-->
+                      <!--{% for energy in energies%}-->
+                        <!--<tr>-->
+                            <!--<td>{{ forloop.counter }}</td>-->
+                            <!--<td >{{energy.id}}</td>-->
+                            <!--<td>{{energy.title}}</td>-->
+                            <!--<td class="badge badge-danger">{{energy.code}}</td>-->
+                            <!--<td>{{energy.year}}</td>-->
+                            <!--<td>{{energy.inventors}}</td>-->
+                        <!--</tr>-->
+                      <!--{% endfor %}-->
+                      <!--</tbody>-->
+                    <!--</table>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer text-sm-center">
+          
+            <span class="text-muted text-sm-center">All Rights Reserved by XEW 2.0.</span>
+            
+          
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="{% static 'vendors_V/base/vendor.bundle.base.js' %}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="{% static 'vendors_V/chart.js/Chart.min.js' %}"></script>
+  <script src="{% static 'vendors_V/datatables.net/jquery.dataTables.js' %}"></script>
+  <script src="{% static 'vendors_V/datatables.net-bs4/dataTables.bootstrap4.js' %}"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{% static 'js_V/off-canvas.js' %}"></script>
+  <script src="{% static 'js_V/hoverable-collapse.js' %}"></script>
+  <script src="{% static 'js_V/template.js' %}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{% static 'js_V/dashboard.js' %}"></script>
+  <script src="{% static 'js_V/data-table.js' %}"></script>
+  <script src="{% static 'js_V/jquery.dataTables.js' %}"></script>
+  <script src="{% static 'js_V/dataTables.bootstrap4.js' %}"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

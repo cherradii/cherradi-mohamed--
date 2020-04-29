@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>XEW 2.0 | Explorer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  {% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/icon_fonts/css/all_icons_min.css' %}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>Rapid</span></a></h1> -->
+        <a href="{% url 'home' %}" class="scrollto"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <!-- <li ><a href="#intro">Home</a></li> -->
+          <li class="active"><a href="{% url 'explorer' %}">Explorer</a></li>
+          <li><a href="{% url 'home' %}">À propos</a></li>
+          <li><a href="{% url 'home' %}">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li> -->
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+
+  <main id="main">
+
+    
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">SS-XEW: Choisir votre source</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">VEILLE BREVET</li>
+              <li data-filter=".filter-card">VEILLE SCIENTIFIQUE</li>
+              <!-- <li data-filter=".filter-web">Web</li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/uspto.jpeg' %}" class="img-fluid" alt="" style="width: 500px;">
+              <div class="portfolio-info">
+                <h4><a href="{% url 'search' %}">USPTO</a></h4>
+                <!-- <p>App</p> -->
+                <div>
+                  <a href="{% url 'search' %}"   class="link-preview"><i class="ion ion-eye"></i></a>
+                  <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/wipo.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">WIPO</a></h4>
+                
+                <div>
+                  <a href="{% static 'img/portfolio/app2.jpg' %}" class="link-preview" ><i class="ion ion-eye"></i></a>
+                  <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/pubMed.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">PubMed</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="{% static 'img/portfolio/card2.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/espaceNet.jpg' %}" class="img-fluid" alt="" style="width: 700px; height: 200px;">
+              <div class="portfolio-info">
+                <h4><a href="#">EspaceNet</a></h4>
+                <!-- <p>App</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/app3.jpg' %}" class="link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/opic.jpeg' %}" class="img-fluid" alt="" style="width: 700px; height: 150px;">
+              <div class="portfolio-info">
+                <h4><a href="#">OPIC</a></h4>
+                <!-- <p>App</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/opic.jpeg' %}" class="link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/ompic.jpg' %}" class="img-fluid" alt="" style="width: 700px;">
+              <div class="portfolio-info">
+                <h4><a href="#">OMPIC</a></h4>
+                <!-- <p>App</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/app3.jpg' %}" class="link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/webofscience.png' %}" class="img-fluid" alt="" style="width: 600px;">
+              <div class="portfolio-info">
+                <h4><a href="#">Web Of Science</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/webofscience.png' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/ieee.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">IEEE</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/card3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/hal.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">HAL</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/card3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/springer.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Springer</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/springer.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/acm.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">ACM</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/card3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/portfolio/cnki.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">CNKI</a></h4>
+                <!-- <p>Card</p> -->
+                <div>
+                  <a href="{% static 'img/portfolio/card3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container">
+
+        <header class="section-header">
+          <h3>SBDA-XEW : Achat durable</h3>
+          
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+      
+          <!-- Basic Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                
+                <img src="{% static 'img/portfolio/marches-publics.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Travaux
+                </h4>
+                
+                <a href="{% url 'travaux:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Regular Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'img/portfolio/marches-publics.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Fournitures
+                </h4>
+                
+                <a href="{% url 'travaux:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Premium Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'img/portfolio/marches-publics.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title"> 
+                  Services
+                </h4>
+                
+                <a href="{% url 'travaux:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+    </section><!-- #pricing -->
+
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container">
+
+        <header class="section-header">
+          <h3>SBDA-XEW : Marketing</h3>
+
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+
+          <!-- Basic Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+
+                <img src="{% static 'img/portfolio/marketing.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">
+                  Unsubscribe
+                </h4>
+
+                <a href="{% url 'marketing:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'img/portfolio/marketing.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">
+                  Open
+                </h4>
+
+                <a href="{% url 'marketing:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan  -->
+          <div class="col-xs-12 col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <img src="{% static 'img/portfolio/marketing.jpg' %}" style="width: 250px;">
+              </div>
+              <div class="card-block">
+                <h4 class="card-title">
+                  Click
+                </h4>
+
+                <a href="{% url 'marketing:show' %}" class="btn">Analyser</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <!-- #faq -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container margin_60_35">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <p>
+            <a class="navbar-brand" href="{% url 'home' %}">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="{% static 'img/logo.png' %}" style="width: 150px;"  class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <!-- <img src="img/logo-light-icon.png"  class="light-logo" /> -->
+                            
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <!-- <span class="logo-text">
+                             
+                             <h3 style="float: right;">XEW 2.0</h3>
+                        </span> -->
+                    </a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>About</h5>
+          <ul class="links" style="list-style-type:none;">
+            <li><a href="#0">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#0">FAQ</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>DEMOS</h5>
+          <ul class="links" style="list-style-type:none;">
+            <li><a href="#0">Autonomous Vehicle</a></li>
+            <li><a href="#0">Smart Cities</a></li>
+            <li><a href="#0">Big Data</a></li>
+            <li><a href="#0">Renewable Energy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact with Us</h5>
+          <ul class="contacts" style="list-style-type:none;">
+            <li><a href="tel://61280932400"><i class="icon_mobile"></i> </a></li>
+            <li><a href="mailto:contact@xplorew.org"><i class="icon_mail_alt"></i> contact@xplorew.org</a></li>
+          </ul>
+          <div class="follow_us">
+            <h5>Follow us</h5>
+            <ul style="list-style-type:none;">
+              <li><a href="#0"><i class="social_facebook"></i></a></li>
+              <li><a href="#0"><i class="social_twitter"></i></a></li>
+              <li><a href="#0"><i class="social_linkedin"></i></a></li>
+              <li><a href="#0"><i class="social_instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/row-->
+      <hr>
+      <div class="row">
+        <div class="col-md-8">
+          <ul id="additional_links">
+            <!-- <li><a href="#0">Terms and conditions</a></li>
+            <li><a href="#0">Privacy</a></li> -->
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div id="copy">© 2019 XEW 2.0</div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

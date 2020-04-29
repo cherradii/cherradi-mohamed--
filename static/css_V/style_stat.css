@@ -1,0 +1,268 @@
+.feed-widget .feed-body .feed-item {
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .feed-widget .feed-body .feed-item:hover {
+    background: #f8f9fa; }
+  .feed-widget .feed-body .feed-item > .feed-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100%;
+    color: #fff; }
+    .feed-widget .feed-body .feed-item > .feed-icon i {
+      line-height: 40px; }
+
+.todo-widget .todo-list .todo-item {
+  border: 0px;
+  margin-bottom: 0px;
+  padding: 20px 15px 15px 0px; }
+  .todo-widget .todo-list .todo-item .custom-checkbox {
+    width: 100%; }
+    .todo-widget .todo-list .todo-item .custom-checkbox .todo-label {
+      font-weight: 400;
+      width: 100%; }
+  .todo-widget .todo-list .todo-item .assignedto {
+    padding: 0 0 0 25px;
+    margin: 0px; }
+    .todo-widget .todo-list .todo-item .assignedto .assignee {
+      padding: 0px;
+      display: inline-block;
+      border: 0px;
+      margin-right: 2px; }
+      .todo-widget .todo-list .todo-item .assignedto .assignee .assignee-img {
+        width: 30px;
+        border-radius: 100%; }
+  .todo-widget .todo-list .todo-item .item-date {
+    padding-left: 25px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #a1aab2; }
+
+.list-task .task-done .todo-desc,
+.list-task .task-done .badge {
+  text-decoration: line-through; }
+
+.profiletimeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 40px 10px 0 30px;
+  border-left: 1px solid #e9ecef; }
+  .profiletimeline .sl-left {
+    float: left;
+    margin-left: -60px;
+    z-index: 1;
+    margin-right: 15px; }
+    .profiletimeline .sl-left img {
+      max-width: 40px; }
+
+.profiletimeline .sl-item {
+  margin-top: 8px;
+  margin-bottom: 30px; }
+
+.profiletimeline .sl-date {
+  font-size: 12px;
+  color: #a1aab2; }
+
+/*
+Template Name: Admin Template
+Author: Niravjoshi / Wrappixel
+File: scss
+*/
+#main-wrapper[data-layout="horizontal"] {
+  /****************************
+    This is for the fixed header layout
+    ***************************/
+  /****************************
+    This is for the fixed sidebar layout
+    ***************************/ }
+  #main-wrapper[data-layout="horizontal"][data-header-position="fixed"] .topbar {
+    position: fixed;
+    width: 100%; }
+  #main-wrapper[data-layout="horizontal"][data-header-position="fixed"] .left-sidebar {
+    padding-top: 64px; }
+  #main-wrapper[data-layout="horizontal"][data-sidebar-position="fixed"] .topbar {
+    position: fixed;
+    width: 100%; }
+  #main-wrapper[data-layout="horizontal"][data-sidebar-position="fixed"] .left-sidebar {
+    padding-top: 64px;
+    position: fixed; }
+  #main-wrapper[data-layout="horizontal"][data-sidebar-position="fixed"] .page-wrapper {
+    padding-top: 78px; }
+
+/****************************
+This is for the horizontal layout
+***************************/
+@media (min-width: 768px) {
+  #main-wrapper[data-layout="horizontal"] {
+    background: #eef5f9;
+    /****************************
+        This is for the Boxed horizontal layout
+        ***************************/
+    /****************************
+        This is for the horizontal layout
+        ***************************/ }
+    #main-wrapper[data-layout="horizontal"] .topbar {
+      -webkit-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s; }
+    #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .top-navbar, #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .scroll-sidebar, #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .page-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative; }
+    #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .sidebar-nav #sidebarnav {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .sidebar-nav #sidebarnav > .sidebar-item > .has-arrow:after {
+        display: block; }
+    #main-wrapper[data-layout="horizontal"][data-boxed-layout="boxed"] .sidebar-nav .sidebar-item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0; }
+    #main-wrapper[data-layout="horizontal"][data-sidebar-position="fixed"] .page-wrapper {
+      padding-top: 128px; }
+    #main-wrapper[data-layout="horizontal"] .topbar .top-navbar .navbar-header {
+      width: 200px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    #main-wrapper[data-layout="horizontal"] .topbar .sidebartoggler {
+      display: none; }
+    #main-wrapper[data-layout="horizontal"] .left-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-top: 0px;
+      z-index: 45;
+      -webkit-transition: 0s;
+      -o-transition: 0s;
+      transition: 0s; }
+      #main-wrapper[data-layout="horizontal"] .left-sidebar .scroll-sidebar {
+        height: 54px; }
+    #main-wrapper[data-layout="horizontal"] .sidebar-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    #main-wrapper[data-layout="horizontal"] .scroll-sidebar {
+      height: auto; }
+    #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav .sidebar-item {
+        position: relative;
+        width: auto; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item {
+        border-right: 1px solid rgba(0, 0, 0, 0.1); }
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item > .has-arrow:after {
+          -webkit-transform: rotate(-135deg) translate(0, -50%);
+          -ms-transform: rotate(-135deg) translate(0, -50%);
+          transform: rotate(-135deg) translate(0, -50%); }
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:last-child > .first-level {
+          right: 0px;
+          left: auto; }
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item > .two-column + .first-level {
+          width: 400px; }
+          #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item > .two-column + .first-level > .sidebar-item {
+            float: left;
+            width: 50%;
+            vertical-align: top; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item ul {
+        position: absolute;
+        left: 0px;
+        top: auto;
+        width: 220px;
+        padding-bottom: 0px;
+        z-index: 100;
+        display: none;
+        -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .mega-dropdown {
+        position: static; }
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .mega-dropdown .first-level {
+          width: 100%; }
+          #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .mega-dropdown .first-level > li {
+            width: 25%;
+            float: left; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:hover {
+        background: rgba(0, 0, 0, 0.025); }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:hover ul.first-level,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:hover ul.first-level.collapse {
+        display: block; }
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:hover ul.first-level:after,
+        #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:hover ul.first-level.collapse:after {
+          position: absolute;
+          content: "";
+          background: rgba(0, 0, 0, 0.025);
+          top: 0;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          z-index: -1; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item ul.second-level {
+        left: 220px;
+        top: 0px; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item:last-child > .first-level ul.second-level,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item .first-level .right-side-dd ul.second-level {
+        right: 220px;
+        top: 0px;
+        left: auto; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav ul.first-level > .sidebar-item:hover ul.second-level {
+        display: block; }
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item > .has-arrow:after,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav .nav-small-cap,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav .sidebar-footer,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav .user-pro,
+      #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav .badge {
+        display: none; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #main-wrapper[data-layout="horizontal"] .sidebar-nav > ul > .sidebar-item > .sidebar-link i {
+    display: none; }
+  #main-wrapper[data-layout="horizontal"] .sidebar-nav #sidebarnav > .sidebar-item {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto; }
+  /****************************
+    This is for the fixed sidebar layout
+    ***************************/
+  [data-sidebar-position="fixed"] .left-sidebar {
+    overflow: auto; } }
+
+/*
+Template Name: Admin Template
+Author: Wrappixel
+
+File: scss
+*/
+/*============================================================== 
+ For Desktop & above all (1650px) 
+ ============================================================== */
+/*============================================================== 
+ For Laptop & above all (1370px) 
+ ============================================================== */
+/*-- ============================================================== 
+ Small Desktop & above all (1024px) 
+ ============================================================== */
+/*-- ============================================================== 
+ Ipad & above all(768px) 
+ ============================================================== */
+@media (min-width: 768px) {
+  .bc-content {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; } }
+
+/*-- ============================================================== 
+ Phone and below ipad(767px) 
+ ============================================================== */
+@media (max-width: 991.98px) {
+  .do-block {
+    display: block !important; } }

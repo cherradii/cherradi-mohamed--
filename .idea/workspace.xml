@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c1d96e5-1e7b-4a25-a627-1154b377edf1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mysiteXEWTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysiteXEWTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestUsptoJson.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestUsptoJson.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ghostdriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/ghostdriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/polls/templates/polls/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/viz.html" beforeDir="false" afterPath="$PROJECT_DIR$/polls/templates/polls/viz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/Fees.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/Jano12-LaTeX.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/Scientific Commitee.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/committees.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/gs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._DR-Maroc.jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._DRR-Mar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._Nador.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._drapeau-maroc-icone-4235-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._hoceima.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._icon-MR1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._icone-ma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._images8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/._ma-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/05585275-photo-logo-facebook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/DR-Maroc.jpg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/DRR-Mar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/Nador.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/drapeau-maroc-icone-4235-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/hoceima.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/icon-FR1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/icon-MR1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/icone-ma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/images8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/ma-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/images/pic07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/participant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/sg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/JANO-NEW/venue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/Registration Fees.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-1000px.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-1200px.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-desktop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-fluid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core-noscript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/core.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/mobileUI-beveled.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/mobileUI-flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/5grid/mobileUI-modern.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/arrow01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/bg01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/bg02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/bg03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/bg04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/gradient.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/mobileUI-site-nav-opener-bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/shadow01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/images/shadow02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/style-1000px.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/style-desktop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/style-mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/js/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/js/jquery.dropotron-1.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/php/IT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JANO/php/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/mainTest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styleUspto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/swipebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/prettify.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/docs/styles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/doughnut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/pie.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/polarArea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/radar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/samples/sixup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/6charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/excanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/assets/simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/chart-master/site/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/build-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/fakeobjects/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/image/images/noimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/link/images/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/scayt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/appendto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/assets/inlineall/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/assets/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/assets/sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/assets/uilanguages/languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/inlineall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/inlinebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/dialog/assets/my_dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/dialog/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/enterkey/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/htmlwriter/outputforflash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/htmlwriter/outputhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/magicline/magicline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/toolbar/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/plugins/wysiwygarea/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/tabindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/uicolor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/uilanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/samples/xhtmlstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/dialog_opera.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/images/mini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/skins/moono/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/ckeditor/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/GPL-LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/MIT-LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/agenda-views.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/basic-views.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-icons_2694e8_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-icons_3d80b3_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-icons_72a7cf_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/cupertino/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/external-dragging.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/gcal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/json-events.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/json.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/selectable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/demos/theme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/fullcalendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/fullcalendar/gcal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/jquery/jquery-1.8.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/fullcalendar/jquery/jquery-ui-1.8.23.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/examples/excanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/examples/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/img/easy-pie-chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-knob/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-knob/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-knob/js/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/jquery-ui-1.10.1.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/jquery-ui-1.10.1.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/jquery-ui-1.10.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/jquery-ui/jquery-ui-1.9.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/area-as-line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/bar-colors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/bar-no-axes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/days.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/decimal-custom-hover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/diagonal-xlabels-bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/diagonal-xlabels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/donut-colors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/donut-formatter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/dst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/goals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/lib/example.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/lib/example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/lib/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/lib/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/months-no-smooth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/negative.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/no-grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/non-continuous.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/non-date.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/quarters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/stacked_bars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/timestamps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/updating.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/weeks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/examples/years.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/grunt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/less/morris.core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.area.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.bar.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.donut.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.grid.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.hover.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/lib/morris.line.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/morris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/raphael-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/area/area_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/bar/bar_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/bar/colours.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/commas_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/donut/donut_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/grid/auto_grid_lines_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/grid/set_data_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/grid/y_label_format_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/hover_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/label_series_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/line/line_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/pad_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/lib/parse_time_spec.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/specs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/support/placeholder.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/chai-1.3.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/chai-jquery-1.1.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/mocha-1.6.0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/mocha-1.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/raphael-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/sinon-1.5.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/assets/morris.js-0.4.3/spec/vendor/sinon-chai-2.1.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/contactform/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/contactform/contactform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/bootstrap-colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/elegant-icons-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/jquery-jvectormap-1.2.2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/jquery-ui-1.10.4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/line-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/style-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/css/xcharts.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/ElegantIcons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/ElegantIcons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/ElegantIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/ElegantIcons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/Germany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/India.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/Russia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/Spain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/arrow-up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar-mini.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar-mini2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar-mini3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar-mini4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/avatar1_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/chart-texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/chat-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/chat-avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/customSelect-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/geekslabs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/line-icon-c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/line-icon-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/line-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/search-line-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/social.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/weather-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/icons/weather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/left-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/logo-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/mail-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/profile-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/profile-widget-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/right-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/sample-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/sample-img-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/sample-img-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/search-icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/img/user22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap-colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap-wysiwyg-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap-wysiwyg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/calendar-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/chartjs-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/charts-flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/charts-other.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/charts-xcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/dynamic-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/easy-pie-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/form-component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/form-validation-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/fullcalendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/ga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/gdp-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/gritter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery-jvectormap-1.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery-jvectormap-world-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery-ui-1.10.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery-ui-1.9.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.autosize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.customSelect.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.hotkeys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.localscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.nicescroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.placeholder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.rateit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.scrollTo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.smartWizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.sparkline-11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.sparkline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.stepy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/lte-ie7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/morris-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/sliders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/sparkline-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/sparklines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cssViz/js/xcharts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Ana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Analyse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Analysis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/R1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/R2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Reporting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/SS-XEW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/SS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/SS1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/V.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/V1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/V3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/V4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/V5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/a1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/a2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/a3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/amine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/anass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bernard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/big6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/c4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/carrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/clientsbg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e33 - copie 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e33 - copie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/e44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/hangouts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/i1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/i2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/i3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/i4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/img-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/img-sprite2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/t1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/t2 - copie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/t2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/t3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/te1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/te2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/te3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/testimonialsbg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/up-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/uspto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/usptoLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/usptotest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/w6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.swipebox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/move-top.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="18" />
+              <folding>
+                <element signature="e#630#662#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travaux/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travaux/templates/travaux/public.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-22938" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/travaux/templates/travaux/travaux1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15832" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/travaux/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>a</find>
+      <find>bann</find>
+      <find>h1</find>
+      <find>body</find>
+      <find>banner</find>
+      <find>banne</find>
+      <find>img</find>
+      <find>XEW</find>
+      <find>msg</find>
+      <find>bootstra</find>
+      <find>Recherche</find>
+      <find>uspto</find>
+      <find>codeInv</find>
+      <find>Bien</find>
+      <find>index</find>
+      <find>cher</find>
+      <find>searchU</find>
+      <find>getFil</find>
+      <find>analyser</find>
+      <find>analyse</find>
+      <find>marke</find>
+      <find>click</find>
+      <find>uns</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/users/templates/users/search_test.html" />
+        <option value="$PROJECT_DIR$/bigs/templates/bigs/smartCities.html" />
+        <option value="$PROJECT_DIR$/energies/templates/energies/smartCities.html" />
+        <option value="$PROJECT_DIR$/travaux/serializers.py" />
+        <option value="$PROJECT_DIR$/travaux/models.py" />
+        <option value="$PROJECT_DIR$/travaux/apps.py" />
+        <option value="$PROJECT_DIR$/travaux/templates/travaux/travaux.html" />
+        <option value="$PROJECT_DIR$/travaux/templates/travaux/travaux1.html" />
+        <option value="$PROJECT_DIR$/users/templates/indexFinal.html" />
+        <option value="$PROJECT_DIR$/travaux/templates/travaux/public.html" />
+        <option value="$PROJECT_DIR$/marketing/apps.py" />
+        <option value="$PROJECT_DIR$/marketing/models.py" />
+        <option value="$PROJECT_DIR$/marketing/serializers.py" />
+        <option value="$PROJECT_DIR$/static/data_marketing/unsubscribe.json" />
+        <option value="$PROJECT_DIR$/static/data_marketing/subject_unsub.json" />
+        <option value="$PROJECT_DIR$/marketing/templates/marketing/marketing.html" />
+        <option value="$PROJECT_DIR$/users/templates/users/register.html" />
+        <option value="$PROJECT_DIR$/users/templates/users/explorer.html" />
+        <option value="$PROJECT_DIR$/users/templates/users/base.html" />
+        <option value="$PROJECT_DIR$/static/dataVehicle/mapData.json" />
+        <option value="$PROJECT_DIR$/users/templates/home.html" />
+        <option value="$PROJECT_DIR$/smarts/templates/smarts/smartCitiesNv.html" />
+        <option value="$PROJECT_DIR$/smarts/urls.py" />
+        <option value="$PROJECT_DIR$/smarts/views.py" />
+        <option value="$PROJECT_DIR$/energies/urls.py" />
+        <option value="$PROJECT_DIR$/energies/views.py" />
+        <option value="$PROJECT_DIR$/energies/templates/energies/energy.html" />
+        <option value="$PROJECT_DIR$/bigs/urls.py" />
+        <option value="$PROJECT_DIR$/bigs/views.py" />
+        <option value="$PROJECT_DIR$/bigs/templates/bigs/bigData.html" />
+        <option value="$PROJECT_DIR$/vehicules/urls.py" />
+        <option value="$PROJECT_DIR$/vehicules/views.py" />
+        <option value="$PROJECT_DIR$/vehicules/templates/vehicules/vehicule.html" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/smarts/templates/smarts/smartCities.html" />
+        <option value="$PROJECT_DIR$/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/show.html" />
+        <option value="$PROJECT_DIR$/users/templates/users/search.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/visualizeUspto.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/vizualize.html" />
+        <option value="$PROJECT_DIR$/uspto/templates/uspto/show.html" />
+        <option value="$PROJECT_DIR$/polls/views.py" />
+        <option value="$PROJECT_DIR$/polls/urls.py" />
+        <option value="$PROJECT_DIR$/uspto/urls.py" />
+        <option value="$PROJECT_DIR$/uspto/views.py" />
+        <option value="$PROJECT_DIR$/marketing/urls.py" />
+        <option value="$PROJECT_DIR$/marketing/views.py" />
+        <option value="$PROJECT_DIR$/travaux/urls.py" />
+        <option value="$PROJECT_DIR$/travaux/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Xew_USPTO_VF_PFE_Hosting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xew_USPTO_VF_PFE_Hosting" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\testMongo\mongoProject\XEWVIZPRO" />
+      <recent name="E:\testMongo\mongoProject\XEWVIZPRO\polls\templates\polls" />
+      <recent name="E:\testMongo\mongoProject\mysiteXEWTest\users\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\0. Formation1\Xew_USPTO_VF_PFE_Hosting\smarts\templates\smarts" />
+      <recent name="C:\Users\hp\PycharmProjects\0. Formation1\Xew_USPTO_VF_PFE_Hosting\static\img" />
+      <recent name="C:\Users\hp\PycharmProjects\xewLast\static\js" />
+      <recent name="C:\Users\hp\PycharmProjects\xewLast\static" />
+      <recent name="C:\Users\hp\PycharmProjects\xewLast\static\cssV" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c1d96e5-1e7b-4a25-a627-1154b377edf1" name="Default Changelist" comment="" />
+      <created>1550245048897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550245048897</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9238477" visible="true" weight="0.17363751" />
+      <window_info id="Structure" order="1" sideWeight="0.0761523" side_tool="true" weight="0.17680608" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/data_marketing/subject_client_unsub.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data_marketing/subject_unsub.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="973" selection-start-column="973" selection-end-column="973" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style_home.css" />
+    <entry file="file://$PROJECT_DIR$/static/dataVehicle/mapData.json" />
+    <entry file="file://$PROJECT_DIR$/smarts/templates/smarts/smartCitiesNv.html" />
+    <entry file="file://$PROJECT_DIR$/energies/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="6" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energies/templates/energies/energy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="1203" column="19" selection-start-line="1203" selection-end-line="1238" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigs/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigs/templates/bigs/bigData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1321" column="56" lean-forward="true" selection-start-line="1321" selection-start-column="56" selection-end-line="1321" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicules/templates/vehicules/vehicule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1218" column="41" selection-start-line="1218" selection-start-column="41" selection-end-line="1218" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicules/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicules/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smarts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smarts/templates/smarts/smartCities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="1376" column="32" selection-start-line="1376" selection-start-column="32" selection-end-line="1376" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smarts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/visualizeUspto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1221" column="14" selection-start-line="1221" selection-start-column="14" selection-end-line="1221" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#button#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/viz2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1341" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/vizualize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2266">
+          <caret line="963" column="58" lean-forward="true" selection-start-line="963" selection-start-column="58" selection-end-line="963" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2438">
+          <caret line="159" column="29" selection-start-line="159" selection-start-column="29" selection-end-line="159" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="102" column="57" selection-start-line="102" selection-start-column="57" selection-end-line="102" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4374">
+          <caret line="168" column="54" selection-start-line="168" selection-start-column="54" selection-end-line="168" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#b#0;n#a#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#b#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/succes.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uspto/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uspto/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uspto/templates/uspto/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uspto/templates/uspto/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="19" column="35" lean-forward="true" selection-start-column="4" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uspto/templates/uspto/uspto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17442">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#649#658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5668">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#section#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#b#0;n#a#0;n#p#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketing/templates/marketing/public.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketing/templates/marketing/travaux1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15832" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/templates/users/explorer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="395" column="21" selection-start-line="395" selection-start-column="18" selection-end-line="395" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketing/templates/marketing/marketing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6054">
+          <caret line="359" column="15" selection-start-line="359" selection-start-column="15" selection-end-line="359" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketing/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marketing/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="48" column="15" lean-forward="true" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energies/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="18" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travaux/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travaux/templates/travaux/public.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22938" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travaux/templates/travaux/travaux1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15832" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travaux/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
